@@ -4,7 +4,7 @@ public class ThreadSum {
 		// upper limit of numbers to add/subtract to Counter
 		final int LIMIT = 10000000;
 		// The counter that accumulates a total.
-		Counter counter = new SynchronousCounter();
+		Counter counter = new AtomicCounter();
 		runThreads(counter, LIMIT);
 	}
 
@@ -15,11 +15,27 @@ public class ThreadSum {
 		// threads to run the tasks
 		Thread thread1 = new Thread(addtask);
 		Thread thread2 = new Thread(subtask);
+//		Thread thread3 = new Thread(addtask);
+//		Thread thread4 = new Thread(subtask);
+//		Thread thread5 = new Thread(addtask);
+//		Thread thread6 = new Thread(subtask);
+//		Thread thread7 = new Thread(addtask);
+//		Thread thread8 = new Thread(subtask);
+//		Thread thread9 = new Thread(addtask);
+//		Thread thread10 = new Thread(subtask);
 		// start the tasks
 		System.out.println("Starting threads");
 		long startTime = System.nanoTime();
 		thread1.start();
 		thread2.start();
+//		thread3.start();
+//		thread4.start();
+//		thread5.start();
+//		thread6.start();
+//		thread7.start();
+//		thread8.start();
+//		thread9.start();
+//		thread10.start();
 		// wait for threads to finish
 		try {
 			thread1.join();
