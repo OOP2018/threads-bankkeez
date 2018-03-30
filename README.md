@@ -43,7 +43,7 @@ account that is open on different devices. Or he could cheat the bank by multipl
 
 3.2 Using the CounterWithLock class that uses the ReentrantLock.
 
-3.3 ReeantrantLock provides synchronization to method while sharing same resources. It gives a lock to the current working thread and blocks all other threads which are trying to take a lock on the shared resource.
+3.3 ReentrantLock provides synchronization to method while sharing same resources. It gives a lock to the current working thread and blocks all other threads which are trying to take a lock on the shared resource.
 
 3.4 When done the try process, it must finally do the finally body.
 
