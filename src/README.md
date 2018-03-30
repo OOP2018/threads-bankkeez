@@ -63,7 +63,9 @@ account that is open on different devices. Or he could cheat the bank by multipl
 
 ## 6. Analysis of Results
 
-Synchronized method seems to be the slowest while AtomicLong for total is the fastest.
+6.1 Synchronized method seems to be the slowest while AtomicLong for total is the fastest.
+
+6.2 In my opinion using Lock is the best way because you can lock thread at a time, it can also be develop into more complex lock in future.
 
 ## 7. Using Many Threads (optional)
 
