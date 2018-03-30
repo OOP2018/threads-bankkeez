@@ -19,7 +19,7 @@ The threads use the counter to add and subtract values.
 |:------------------------|:-------------------|-----------------|
 | Unsynchronized counter  |0.016909            |                 |
 | Using ReentrantLock     |0.836442            |                 |
-| Syncronized method      |                    |                 |
+| Syncronized method      |0.865581            |                 |
 | AtomicLong for total    |                    |                 |
 
 ## 1. Using unsynchronized counter object
@@ -28,7 +28,7 @@ answer the questions (1.1 - 1.3)
 
 1.1 Sometime it becomes 0. When running multiple threads at the same time, it goes into the condition called race condition.
 
-1.2 average runtime is 0.016909
+1.2 average runtime is 0.016909.
 
 1.3 due to race condition, sometimes the AddTask or SubtractTask still using the old value.
 
@@ -43,7 +43,7 @@ account that is open on different devices.
 
 answer questions 3.1 - 3.4
 
-3.1 The total is always zero. Average runtime is 0.836442
+3.1 The total is always zero. Average runtime is 0.836442.
 
 3.2 Using the CounterWithLock class that uses the ReentrantLock
 
@@ -53,7 +53,11 @@ answer questions 3.1 - 3.4
 
 ## 4. Counter with synchronized method
 
-answer question 4
+4.1 The total is always zero. Average runtime is 0.865581.
+
+4.2 It avoid the overhead call by calling superclass add instead.
+
+4.3 Synchronized means happening at the same time. I will use it when my program is using the same resource from multiple thread at the same time.
 
 ## 5. Counter with AtomicLong
 
