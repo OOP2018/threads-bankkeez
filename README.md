@@ -26,15 +26,15 @@ The threads use the counter to add and subtract values.
 
 1.1 Sometime it becomes 0. When running multiple threads at the same time, it goes into the condition called race condition.
 
-1.2 average runtime is 0.016909.
+1.2 Average runtime is 0.016909.
 
-1.3 due to race condition, sometimes the AddTask or SubtractTask still using the old value.
+1.3 Due to race condition, sometimes the AddTask or SubtractTask still using the old value.
 
 ## 2. Implications for Multi-threaded Applications
 
 How might this affect real applications?  
 
-He will confront the problem not having the same amount of money in his 
+2. He will confront the problem not having the same amount of money in his 
 account that is open on different devices. Or he could cheat the bank by multiple withdrawn from different places.
 
 ## 3. Counter with ReentrantLock
