@@ -61,7 +61,7 @@ answer questions 3.1 - 3.4
 
 ## 5. Counter with AtomicLong
 
-answer question 5
+
 
 ## 6. Analysis of Results
 
